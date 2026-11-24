@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – His Friends Vocal Group</title>
+  <meta name="description" content="Contact His Friends Vocal Group for concert bookings and enquiries.">
+  <link rel="icon" href="assets/img/album-cover.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261122d">
+</head>
+<body data-page="contact">
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" data-i18n="contact.label"></p>
+      <h1 data-i18n="contact.title"></h1>
+      <p class="lead" data-i18n="contact.sub"></p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container contact-grid">
+      <form class="form-card reveal" id="contact-form" action="https://formsubmit.co/ajax/hisfriendsvocalgroup@gmail.com" method="POST" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name"><span data-i18n="form.name"></span><span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="Name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <span class="err" id="e-name" data-i18n="form.invalid"></span>
+          </div>
+          <div class="field">
+            <label for="f-church"><span data-i18n="form.church"></span><span class="req" aria-hidden="true">*</span></label>
+            <input id="f-church" name="Church" type="text" autocomplete="organization" required aria-describedby="e-church">
+            <span class="err" id="e-church" data-i18n="form.invalid"></span>
+          </div>
+          <div class="field full">
+            <label for="f-address"><span data-i18n="form.address"></span><span class="req" aria-hidden="true">*</span></label>
+            <input id="f-address" name="Address" type="text" autocomplete="street-address" required aria-describedby="e-address">
+            <span class="err" id="e-address" data-i18n="form.invalid"></span>
+          </div>
+          <div class="field">
+            <label for="f-phone"><span data-i18n="form.phone"></span><span class="req" aria-hidden="true">*</span></label>
+            <input id="f-phone" name="Mobile" type="tel" inputmode="tel" autocomplete="tel" pattern="[+0-9 \(\)\-]{7,}" required aria-describedby="e-phone">
+            <span class="err" id="e-phone" data-i18n="form.invalid"></span>
+          </div>
+          <div class="field">
+            <label for="f-email"><span data-i18n="form.email"></span><span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <span class="err" id="e-email" data-i18n="form.invalid"></span>
+          </div>
+          <div class="field">
+            <label for="f-type"><span data-i18n="form.type"></span><span class="req" aria-hidden="true">*</span></label>
+            <select id="f-type" name="Reason" required aria-describedby="e-type">
+              <option value="" selected disabled data-i18n="form.type.choose"></option>
+              <option value="Concert booking" data-i18n="form.type.booking"></option>
+              <option value="Church service / event" data-i18n="form.type.service"></option>
+              <option value="CD order" data-i18n="form.type.cd"></option>
+              <option value="Other" data-i18n="form.type.other"></option>
+            </select>
+            <span class="err" id="e-type" data-i18n="form.type.error"></span>
+          </div>
+          <div class="field">
+            <label for="f-date" data-i18n="form.date"></label>
+            <input id="f-date" name="Preferred date" type="date">
+          </div>
+          <div class="field full">
+            <label for="f-msg"><span data-i18n="form.message"></span><span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-msg" name="Message" required aria-describedby="e-msg"></textarea>
+            <span class="err" id="e-msg" data-i18n="form.invalid"></span>
+          </div>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        </div>
+        <div class="form-foot">
+          <small data-i18n="form.privacy"></small>
+          <button class="btn btn-dark" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg><span data-i18n="form.submit"></span></button>
+        </div>
+        <div class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+      </form>
+
+      <aside class="contact-aside">
+        <div class="info-card reveal" data-delay="1">
+          <h3 data-i18n="contact.direct"></h3>
+          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg><a href="mailto:hisfriendsvocalgroup@gmail.com">hisfriendsvocalgroup@gmail.com</a></div>
+          <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Basel, Switzerland</span></div>
+        </div>
+        <div class="photo-frame reveal" data-delay="2"><img src="assets/img/album-cover.jpg" alt="Around His Table album cover" loading="lazy" style="aspect-ratio:1"></div>
+      </aside>
+    </div>
+  </section>
+</main>
+<script src="assets/js/i18n.js?v=20261122d"></script>
+<script src="assets/js/data.js?v=20261122d"></script>
+<script src="assets/js/main.js?v=20261122d"></script>
+</body>
+</html>
