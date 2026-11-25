@@ -4,6 +4,7 @@
 
 window.SITE = {
   email: "hisfriendsvocalgroup@gmail.com",
+  phone: "+41 77 402 65 01",
   spotify: "https://open.spotify.com/album/7uxyCu8vKLSwpPcSZ9tXUo",
   spotifyEmbed: "https://open.spotify.com/embed/album/7uxyCu8vKLSwpPcSZ9tXUo?utm_source=generator&theme=0",
   youtube: "https://music.youtube.com/channel/UCtGvPUkNabrx5GVUdlduYRA",

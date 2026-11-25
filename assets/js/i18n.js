@@ -84,7 +84,7 @@ window.I18N = {
     "form.required": "Required",
     "form.invalid": "Please fill in this field correctly.",
     "form.privacy": "Your details are only used to answer your request.",
-    "contact.direct": "Or write to us directly",
+    "contact.direct": "Call or write us directly",
 
     "support.label": "Support us",
     "support.title": "Help us keep singing",
@@ -190,7 +190,7 @@ window.I18N = {
     "form.required": "Pflichtfeld",
     "form.invalid": "Bitte füllen Sie dieses Feld korrekt aus.",
     "form.privacy": "Ihre Angaben werden nur zur Beantwortung Ihrer Anfrage verwendet.",
-    "contact.direct": "Oder schreiben Sie uns direkt",
+    "contact.direct": "Rufen Sie uns an oder schreiben Sie uns direkt",
 
     "support.label": "Unterstützen",
     "support.title": "Helfen Sie uns, weiter zu singen",
@@ -296,7 +296,7 @@ window.I18N = {
     "form.required": "Obligatoire",
     "form.invalid": "Veuillez remplir correctement ce champ.",
     "form.privacy": "Vos données servent uniquement à répondre à votre demande.",
-    "contact.direct": "Ou écrivez-nous directement",
+    "contact.direct": "Appelez-nous ou écrivez-nous directement",
 
     "support.label": "Nous soutenir",
     "support.title": "Aidez-nous à continuer de chanter",
@@ -402,7 +402,7 @@ window.I18N = {
     "form.required": "Obbligatorio",
     "form.invalid": "Compila correttamente questo campo.",
     "form.privacy": "I tuoi dati vengono usati solo per rispondere alla tua richiesta.",
-    "contact.direct": "Oppure scrivici direttamente",
+    "contact.direct": "Chiamaci o scrivici direttamente",
 
     "support.label": "Sostienici",
     "support.title": "Aiutaci a continuare a cantare",
