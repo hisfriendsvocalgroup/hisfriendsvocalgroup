@@ -101,22 +101,37 @@ p { margin: 0 0 1.1em; }
 .btn-youtube:hover { background: #e6002e; color: #fff; }
 .btn[disabled] { opacity: .6; cursor: progress; transform: none; }
 
-/* ---------- Logo (recreated from the album artwork) ---------- */
+/* ---------- Logo (matches assets/img/logo-black.webp) ----------
+   H, f and v share one left edge. A single vertical bar is the "i" of
+   His, the "i" of friends and the "l" of vocal: it runs from the top of
+   the H down to the baseline of "voca". */
 .logo {
-  display: inline-grid; grid-template-columns: auto 1.5px auto; column-gap: .18em;
-  align-items: end; text-decoration: none; color: inherit; line-height: .95;
+  --logo-bar: max(1.25px, .016em);
+  display: inline-grid; grid-template-columns: auto var(--logo-bar) auto;
+  grid-template-rows: auto auto auto; column-gap: 0;
+  align-items: start; justify-items: start;
+  text-decoration: none; color: inherit; line-height: 1;
   font-family: var(--font-display);
 }
-.logo .bar { grid-column: 2; grid-row: 1 / 4; background: currentColor; width: 1.5px; height: 100%; justify-self: center; }
-.logo .l1 { grid-column: 1; grid-row: 1; justify-self: end; font-weight: 300; }
-.logo .r1 { grid-column: 3; grid-row: 1; font-weight: 300; }
-.logo .l2 { grid-column: 1; grid-row: 2; justify-self: end; font-weight: 500; }
-.logo .r2 { grid-column: 3; grid-row: 2; font-weight: 500; }
-.logo .l3 { grid-column: 1; grid-row: 3; justify-self: end; }
-.logo .r3 { grid-column: 3; grid-row: 3; }
-.logo .l1, .logo .r1 { font-size: 1em; letter-spacing: .02em; }
-.logo .l2, .logo .r2 { font-size: 1.15em; letter-spacing: .01em; }
-.logo .l3, .logo .r3 { font-size: .42em; letter-spacing: .06em; padding-top: .25em; }
+.logo > span { white-space: nowrap; }
+.logo .bar {
+  grid-column: 2; grid-row: 1 / 4; align-self: start;
+  width: var(--logo-bar); margin-top: .154em; height: 2.012em;
+  background: currentColor; border-radius: 99px;
+}
+.logo .l1, .logo .l2, .logo .l3 { grid-column: 1; }
+.logo .r1, .logo .r2, .logo .r3 { grid-column: 3; }
+/* H | S — thin capitals */
+.logo .l1, .logo .r1 { grid-row: 1; font-size: .97em; font-weight: 200; }
+.logo .r1 { margin-left: .2em; }
+/* fr | ends — regular weight; ink edge of f lines up with H */
+.logo .l2, .logo .r2 { grid-row: 2; font-size: 1em; font-weight: 400; margin-top: -.02em; }
+.logo .l2 { margin-left: .035em; }
+.logo .r2 { margin-left: .13em; }
+/* voca | group — the bar itself is the "l" of vocal */
+.logo .l3, .logo .r3 { grid-row: 3; font-size: .265em; font-weight: 400; letter-spacing: .19em; margin-top: -.043em; }
+.logo .l3 { margin-left: .19em; margin-right: 0; }
+.logo .r3 { margin-left: .72em; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -130,7 +145,7 @@ p { margin: 0 0 1.1em; }
   box-shadow: 0 1px 0 rgba(255,255,255,.06);
 }
 .header-inner { height: 100%; display: flex; align-items: center; gap: 24px; }
-.site-header .logo { font-size: 20px; }
+.site-header .logo { font-size: 24px; }
 .main-nav { margin-left: auto; }
 .main-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
 .main-nav a {
@@ -547,7 +562,7 @@ p { margin: 0 0 1.1em; }
   .news-item img { aspect-ratio: 16/9; }
   .news-item .body { padding: 0 20px 20px; }
   .lang-btn .lang-code { display: none; }
-  .site-header .logo { font-size: 17px; }
+  .site-header .logo { font-size: 20px; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero-actions .btn { flex: 1 1 auto; }
 }
@@ -597,7 +612,7 @@ p { margin: 0 0 1.1em; }
 }
 
 /* Fixes */
-.site-footer a.logo { display: inline-grid; min-height: 0; gap: 0 .18em; }
+.site-footer a.logo { display: inline-grid; min-height: 0; gap: 0; }
 .ways { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .support-grid { grid-template-columns: minmax(280px, 380px) 1fr; }
 @media (max-width: 920px) { .support-grid { grid-template-columns: 1fr; } }

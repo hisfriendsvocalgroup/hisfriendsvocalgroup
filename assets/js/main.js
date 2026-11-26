@@ -50,7 +50,7 @@
     `<${tag} class="logo" ${tag === "a" ? `href="${href}" aria-label="His Friends Vocal Group – Home"` : 'aria-hidden="true"'}>
       <span class="l1">H</span><span class="bar"></span><span class="r1">S</span>
       <span class="l2">fr</span><span class="r2">ends</span>
-      <span class="l3">vocal</span><span class="r3">group</span>
+      <span class="l3">voca</span><span class="r3">group</span>
     </${tag}>`;
 
   /* ---------- Language ---------- */
